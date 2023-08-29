@@ -199,7 +199,7 @@ header nav {
 }
 
 .navbuttons button {
-    margin: 30px;
+    margin: 30px 15px;
     padding: 15px;
     background-color: inherit;
     border: 0.5px solid white;
@@ -207,12 +207,27 @@ header nav {
     width: 150px;
     color: white;
     font-family: 'Titillium Web', sans-serif;
+    transition: 200ms;
+}
+
+.free:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #e0f2c0;
 }
 
 #acc {
     width: 100px;
     color: black;
     background-color: #e0f2c0;
+    margin-right: 25px;
+}
+
+#acc:hover {
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
 }
 
 .container {
@@ -531,9 +546,12 @@ footer {
     border: 1px solid #3e3f49;
     border-radius: 2em;
     padding: 1em;
+    /* width: 4em;
+    text-align: center; */
+    /* z-index:; */
     /* position: absolute;
     z-index: 2; */
-    border-left: none;
+    /* border-left: none; */
     background-color: #e6e7f9;
 }
 
@@ -557,6 +575,13 @@ footer {
     border-radius: 2em;
     padding: 1em 1.7em;
     margin-right: 20px;
+    transition: 300ms;
+}
+
+.contact span:hover {
+    color: white;
+    background-color: #0f0f0f;
+    cursor: pointer;
 }
 
 .circle {
@@ -591,9 +616,13 @@ footer {
         font-size: 20px;
     }
 
-    .nav {
-        /* font-size: 10px; */
+    .step {
+        font-size: small;
     }
+}
+
+body {
+    /* word-wrap: break-word; */
 }
 
 @media screen and (max-width:1337px) {
